@@ -129,3 +129,4 @@
 /Users/michalpozdal/Desktop/studia/3 rok/TO/projekt/SnakeGame/SnakeGame/obj/Debug/net8.0/SnakeGame.csproj.CopyComplete
 /Users/michalpozdal/Desktop/studia/3 rok/TO/projekt/SnakeGame/SnakeGame/obj/Debug/net8.0/SnakeGame.genruntimeconfig.cache
 /Users/michalpozdal/Desktop/studia/3 rok/TO/projekt/SnakeGame/SnakeGame/obj/Debug/net8.0/ref/SnakeGame.dll
+/Users/michalpozdal/Desktop/studia/3 rok/TO/projekt/SnakeGame/SnakeGame/obj/Debug/net8.0/SnakeGame.sourcelink.json
