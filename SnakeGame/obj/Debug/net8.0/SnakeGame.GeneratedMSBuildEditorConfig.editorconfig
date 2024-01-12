@@ -29,5 +29,8 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [/Users/michalpozdal/Desktop/studia/3 rok/TO/projekt/SnakeGame/SnakeGame/MenuScreen.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[/Users/michalpozdal/Desktop/studia/3 rok/TO/projekt/SnakeGame/SnakeGame/ResultsScreen.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/Users/michalpozdal/Desktop/studia/3 rok/TO/projekt/SnakeGame/SnakeGame/SettingsScreen.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

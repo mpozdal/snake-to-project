@@ -14,8 +14,8 @@
         FontFamily="{StaticResource MainFont}"
         WindowStartupLocation="CenterScreen"
         >
-    <Viewbox>
-            <ContentControl Name="contentControl" />
+    <Viewbox >
+            <ContentControl Name="contentControl"/>
     </Viewbox>
     
 </Window>

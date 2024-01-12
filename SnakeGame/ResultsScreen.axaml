@@ -1,0 +1,33 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="SnakeGame.ResultsScreen"
+             
+             >
+    <Grid Margin="20" >
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="RESULTS" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Grid Grid.Row="1" Width="300" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 20 0 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  />
+                <ColumnDefinition  />
+                <ColumnDefinition  />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="NAME" HorizontalAlignment="Center" FontSize="20"/>
+            <TextBlock Grid.Column="1" Text="RESULT" HorizontalAlignment="Center" FontSize="20"/>
+            <TextBlock Grid.Column="2" Text="LEVEL" HorizontalAlignment="Center" FontSize="20" />
+        </Grid>
+        <ScrollViewer Grid.Row="2"  Margin="20" Width="300" Height="400" HorizontalAlignment="Center">
+           <Grid Grid.Row="1" Width="300" x:Name="ResultsGrid"  HorizontalAlignment="Center"></Grid>
+       </ScrollViewer>
+        <Button VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3" Click="GoBackToMenu_OnClick" Padding="5" FontSize="20" Width="100" Height="30" Content="BACK"  VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+    </Grid>
+</UserControl>

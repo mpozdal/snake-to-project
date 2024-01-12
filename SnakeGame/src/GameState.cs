@@ -14,6 +14,8 @@ public class GameState
     public bool GameOver { get; private set; }
     private Snake _snake;
     private Food _food;
+    private string _name;
+    private string _level;
 
     public GameState(int rows, int cols)
     {
@@ -24,6 +26,11 @@ public class GameState
         _snake = new Snake(Grid, rows, cols);
         
         _food = new Food(Grid, rows, cols);
+        
+        _name = Settings.GetInstance().Nickname;
+        if (Settings.GetInstance().Level == 0) _level = "EASY";
+        else if (Settings.GetInstance().Level == 1) _level = "MEDIUM";
+        else _level = "HARD";
 
     }
     public Snake Snake
@@ -63,6 +70,7 @@ public class GameState
         if (hit == GridValue.Outside || hit == GridValue.Snake)
         {
             GameOver = true;
+            ResultsCollection.AddResult(new Result(_name, Score,_level ));
         } 
         else if (hit == GridValue.Empty)
         {

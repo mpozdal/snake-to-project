@@ -20,6 +20,7 @@ public partial class MainWindow : Window
         InitializeComponent();
         contentControl.Content = new MenuScreen(contentControl);
         Settings settings =  Settings.Instance("Guest", 15, 15, 0);
+        ResultsCollection results = new ResultsCollection();
     }
     
 }

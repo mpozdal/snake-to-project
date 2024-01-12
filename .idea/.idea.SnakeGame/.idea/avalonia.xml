@@ -7,6 +7,7 @@
         <entry key="SnakeGame/GameScreen.axaml" value="SnakeGame/SnakeGame.csproj" />
         <entry key="SnakeGame/MainWindow.axaml" value="SnakeGame/SnakeGame.csproj" />
         <entry key="SnakeGame/MenuScreen.axaml" value="SnakeGame/SnakeGame.csproj" />
+        <entry key="SnakeGame/ResultsScreen.axaml" value="SnakeGame/SnakeGame.csproj" />
         <entry key="SnakeGame/SettingsScreen.axaml" value="SnakeGame/SnakeGame.csproj" />
       </map>
     </option>

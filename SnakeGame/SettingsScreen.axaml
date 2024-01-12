@@ -6,20 +6,37 @@
              x:Class="SnakeGame.SettingsScreen">
     
     <Grid Margin="20" >
+        
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+
+        <!-- Drugi wiersz -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Pierwsza kolumna -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Druga kolumna -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
       
-        <StackPanel>
+        <StackPanel Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5">
             <TextBlock Text="Nickname"/> 
             <TextBox x:Name="Nickname" FontSize="10" Watermark="Your nickname" Width="100" Height="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         </StackPanel>
-        <StackPanel Grid.Row="1">
+        <StackPanel Margin="5" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">
             <TextBlock Text="Level"/> 
             <ComboBox SelectedIndex="0" MaxDropDownHeight="100" MinWidth="100" x:Name="Level">
                 <ComboBoxItem>Easy</ComboBoxItem>
@@ -27,17 +44,17 @@
                 <ComboBoxItem>Hard</ComboBoxItem>
             </ComboBox>
         </StackPanel>
-        <StackPanel Grid.Row="2" >
+        <StackPanel Grid.Row="2" Grid.Column="0" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Center">
             <TextBlock Text="Columns"/> 
-            <TextBox  x:Name="Cols" FontSize="10" Watermark="Number of columns" Width="100" Height="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox  x:Name="Cols" FontSize="10" Watermark="Number of columns" Width="50" Height="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         </StackPanel>
-        <StackPanel Grid.Row="3">
+        <StackPanel Grid.Row="2" Grid.Column="1" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Center">
             <TextBlock Text="Rows"/> 
-            <TextBox  x:Name="Rows" FontSize="10" Watermark="Number of rows" Width="100" Height="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox  x:Name="Rows" FontSize="10" Watermark="Number of rows" Width="50" Height="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         </StackPanel>
         
-        
-        <Button Grid.Row="4" Click="Save_OnClick" Padding="5" FontSize="10" Width="100" Height="30" Content="SAVE"  VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Button  Grid.Row="3" Grid.Column="0" Click="Cancel_OnClick" Padding="5" FontSize="10" Width="100" Height="30" Content="CANCEL"  VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Button Grid.Column="1" Grid.Row="3" Click="Save_OnClick" Padding="5" FontSize="10" Width="100" Height="30" Content="SAVE"  VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         
     </Grid>
  

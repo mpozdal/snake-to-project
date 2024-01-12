@@ -27,7 +27,7 @@ public partial class MenuScreen : UserControl
     }
     private void Results_OnClick(object? sender, RoutedEventArgs e)
     {
-        _content.Content = new GameScreen(_content);
+        _content.Content = new ResultsScreen(_content);
     }
     
 }
