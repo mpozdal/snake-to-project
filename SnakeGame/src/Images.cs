@@ -13,6 +13,7 @@ public static class Images
     public readonly static Bitmap Food = LoadImage("Food.png");
     public readonly static Bitmap DeadBody = LoadImage("DeadBody.png");
     public readonly static Bitmap DeadHead = LoadImage("DeadHead.png");
+    public readonly static Bitmap Logo = LoadImage("snakeLogo.png");
     
     private static Bitmap LoadImage(string fileName)
     {

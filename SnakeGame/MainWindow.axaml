@@ -13,68 +13,9 @@
         Foreground="{StaticResource TextColor}"
         FontFamily="{StaticResource MainFont}"
         WindowStartupLocation="CenterScreen"
-        KeyDown="Window_KeyDown"
-        
         >
-       <Viewbox>
-           <Grid>
-               <Grid.RowDefinitions>
-                   <RowDefinition Height="auto"/>
-                   <RowDefinition Height="auto"/>
-                   <RowDefinition Height="auto"/>
-               </Grid.RowDefinitions>
-              
-                  <Grid 
-                        HorizontalAlignment="Center" 
-                        VerticalAlignment="Center" >
-                      <Grid.ColumnDefinitions>
-                          <ColumnDefinition Width="Auto"></ColumnDefinition>
-                          <ColumnDefinition Width="Auto"></ColumnDefinition>
-                      </Grid.ColumnDefinitions>
-                      <TextBlock 
-                          x:Name="ScoreText" 
-                          HorizontalAlignment="Center" 
-                          VerticalAlignment="Center" 
-                          Text="SCORE 0" 
-                          FontSize="22" 
-                          Margin="10"/>
-                      <TextBlock 
-                          x:Name="HealthText" 
-                          Grid.Column="1"
-                          HorizontalAlignment="Center" 
-                          VerticalAlignment="Center" 
-                          Text="HEALTH 100" 
-                          FontSize="22" 
-                          Margin="10"/>
-                  </Grid>
-               <Border x:Name="GridBorder" 
-                       Grid.Row="1" 
-                       BorderBrush="{StaticResource GridLinesColor}"
-                       BorderThickness="1.5"
-                       HorizontalAlignment="Center"
-                       VerticalAlignment="Center"
-                       Margin="20,0,20,20"
-                      
-               >
-                   <UniformGrid x:Name="GameGrid" 
-                                Width="400"
-                                Height="400"
-                                Background="{StaticResource GridBackgroundColor}"
-                                     
-                   >
-                                
-                   </UniformGrid>
-               </Border>
-               <Border x:Name="Overlay"
-                        Grid.Row="1"
-                        Background="{StaticResource OverlayColor}"
-                        
-                        Margin="{Binding Path=Margin, ElementName=GridBorder}"
-                       >
-                   <TextBlock x:Name="OverlayText" Text="PRESS ANY KEY TO START" FontSize="26" HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" TextWrapping="Wrap"/>
-               </Border>
-           </Grid>
-       </Viewbox>
+    <Viewbox>
+            <ContentControl Name="contentControl" />
+    </Viewbox>
     
 </Window>

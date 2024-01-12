@@ -20,5 +20,14 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 [/Users/michalpozdal/Desktop/studia/3 rok/TO/projekt/SnakeGame/SnakeGame/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[/Users/michalpozdal/Desktop/studia/3 rok/TO/projekt/SnakeGame/SnakeGame/GameScreen.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/Users/michalpozdal/Desktop/studia/3 rok/TO/projekt/SnakeGame/SnakeGame/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/michalpozdal/Desktop/studia/3 rok/TO/projekt/SnakeGame/SnakeGame/MenuScreen.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/michalpozdal/Desktop/studia/3 rok/TO/projekt/SnakeGame/SnakeGame/SettingsScreen.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

@@ -1,0 +1,44 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="SnakeGame.SettingsScreen">
+    
+    <Grid Margin="20" >
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            
+        </Grid.RowDefinitions>
+      
+        <StackPanel>
+            <TextBlock Text="Nickname"/> 
+            <TextBox x:Name="Nickname" FontSize="10" Watermark="Your nickname" Width="100" Height="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <TextBlock Text="Level"/> 
+            <ComboBox SelectedIndex="0" MaxDropDownHeight="100" MinWidth="100" x:Name="Level">
+                <ComboBoxItem>Easy</ComboBoxItem>
+                <ComboBoxItem>Medium</ComboBoxItem>
+                <ComboBoxItem>Hard</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" >
+            <TextBlock Text="Columns"/> 
+            <TextBox  x:Name="Cols" FontSize="10" Watermark="Number of columns" Width="100" Height="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3">
+            <TextBlock Text="Rows"/> 
+            <TextBox  x:Name="Rows" FontSize="10" Watermark="Number of rows" Width="100" Height="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        </StackPanel>
+        
+        
+        <Button Grid.Row="4" Click="Save_OnClick" Padding="5" FontSize="10" Width="100" Height="30" Content="SAVE"  VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        
+    </Grid>
+ 
+</UserControl>

@@ -1,0 +1,75 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="SnakeGame.GameScreen"
+             x:Name="View"
+             Focusable="True"
+             IsTabStop="True"
+             
+             KeyDown="InputElement_OnKeyDown"
+             
+             
+             >
+    <Grid x:Name="Grid">
+               <Grid.RowDefinitions>
+                   <RowDefinition Height="auto"/>
+                   <RowDefinition Height="auto"/>
+                   <RowDefinition Height="auto"/>
+               </Grid.RowDefinitions>
+              
+                  <Grid 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" >
+                      <Grid.ColumnDefinitions>
+                          <ColumnDefinition Width="Auto"></ColumnDefinition>
+                          <ColumnDefinition Width="Auto"></ColumnDefinition>
+                          <ColumnDefinition Width="Auto"></ColumnDefinition>
+                      </Grid.ColumnDefinitions>
+                      <TextBlock 
+                          x:Name="ScoreText" 
+                          HorizontalAlignment="Center" 
+                          VerticalAlignment="Center" 
+                          Text="SCORE 0" 
+                          FontSize="22" 
+                          Margin="10"/>
+                      <TextBlock 
+                          x:Name="HealthText" 
+                          Grid.Column="1"
+                          HorizontalAlignment="Center" 
+                          VerticalAlignment="Center" 
+                          Text="HEALTH 100" 
+                          FontSize="22" 
+                          Margin="10"/>
+                      <Button Grid.Column="2" Content="Go to menu" Click="GoBackToMenu"/>
+                  </Grid>
+               <Border x:Name="GridBorder" 
+                       Grid.Row="1" 
+                       BorderBrush="{StaticResource GridLinesColor}"
+                       BorderThickness="1.5"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Margin="20,0,20,20"
+                      
+               >
+                   <UniformGrid x:Name="GameGrid" 
+                                Width="400"
+                                Height="400"
+                                Background="{StaticResource GridBackgroundColor}"
+                                     
+                   >
+                                
+                   </UniformGrid>
+               </Border>
+               <Border x:Name="Overlay"
+                        Grid.Row="1"
+                        Background="{StaticResource OverlayColor}"
+                        
+                        Margin="{Binding Path=Margin, ElementName=GridBorder}"
+                       >
+                   <TextBlock x:Name="OverlayText" Text="PRESS ANY KEY TO START" FontSize="26" HorizontalAlignment="Center" 
+                              VerticalAlignment="Center" TextWrapping="Wrap"/>
+               </Border>
+           </Grid>
+</UserControl>
